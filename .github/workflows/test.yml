@@ -2,6 +2,7 @@ name: test
 on: [push]
 jobs:
   test-multi:
+    runs-on: ubuntu-latest
     steps:
       - run: date
       - run: false

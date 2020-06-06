@@ -1,0 +1,9 @@
+- name: test
+  on: [push]
+  jobs:
+    test-multi:
+      steps:
+        - run: date
+        - run: false
+        - run: date
+          if: ${{ always() }}
